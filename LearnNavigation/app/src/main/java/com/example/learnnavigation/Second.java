@@ -1,6 +1,7 @@
 package com.example.learnnavigation;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.net.Uri;
 import android.os.Bundle;
@@ -90,8 +91,15 @@ public class Second extends Fragment {
         GridView gridView=(GridView) v.findViewById(R.id.gridview);
 //        GridAdapter gridAdapter=new GridAdapter(getActivity(),numbers,numberImage);
 //        gridView.setAdapter(gridAdapter);
+        gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent=new Intent(getActivity(),GridViewContent.class);
+                intent.putExtra("gridValue",position);
+                startActivity(intent);
+            }
+        });
         gridView.setAdapter(new GridAdapter(getActivity(),numbers,numberImage));
-//        gridView.setOnItemClickListener((AdapterView.OnItemClickListener) this);
         return v;
     }
 

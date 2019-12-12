@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gridview_nav_graph"
+    app:startDestination="@id/gridViewFirst">
+
+    <fragment
+        android:id="@+id/gridViewFirst"
+        android:name="com.example.learnnavigation.GridViewFirst"
+        android:label="fragment_grid_view_first"
+        tools:layout="@layout/fragment_grid_view_first">
+    <action
+        android:id="@+id/action_first_to_second"
+        app:destination="@id/gridViewSecond"
+        app:popUpTo="@+id/gridViewFirst"
+        app:popUpToInclusive="true" />
+    <action
+        android:id="@+id/action_first_to_third"
+        app:destination="@id/gridViewThird"
+        app:popUpTo="@+id/gridViewFirst"
+        app:popUpToInclusive="true"></action>
+    <action
+        android:id="@+id/action_first_to_fourth"
+        app:destination="@id/gridViewFourth"
+        app:popUpTo="@+id/gridViewFirst"
+        app:popUpToInclusive="true"></action>
+    </fragment>
+    <fragment
+        android:id="@+id/gridViewSecond"
+        android:name="com.example.learnnavigation.GridViewSecond"
+        android:label="fragment_grid_view_second"
+        tools:layout="@layout/fragment_grid_view_second" />
+    <fragment
+        android:id="@+id/gridViewThird"
+        android:name="com.example.learnnavigation.GridViewThird"
+        android:label="fragment_grid_view_third"
+        tools:layout="@layout/fragment_grid_view_third" />
+    <fragment
+        android:id="@+id/gridViewFourth"
+        android:name="com.example.learnnavigation.GridViewFourth"
+        android:label="fragment_grid_view_fourth"
+        tools:layout="@layout/fragment_grid_view_fourth" />
+</navigation>
