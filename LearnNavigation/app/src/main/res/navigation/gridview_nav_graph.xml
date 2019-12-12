@@ -10,21 +10,21 @@
         android:name="com.example.learnnavigation.GridViewFirst"
         android:label="fragment_grid_view_first"
         tools:layout="@layout/fragment_grid_view_first">
-    <action
-        android:id="@+id/action_first_to_second"
-        app:destination="@id/gridViewSecond"
-        app:popUpTo="@+id/gridViewFirst"
-        app:popUpToInclusive="true" />
-    <action
-        android:id="@+id/action_first_to_third"
-        app:destination="@id/gridViewThird"
-        app:popUpTo="@+id/gridViewFirst"
-        app:popUpToInclusive="true"></action>
-    <action
-        android:id="@+id/action_first_to_fourth"
-        app:destination="@id/gridViewFourth"
-        app:popUpTo="@+id/gridViewFirst"
-        app:popUpToInclusive="true"></action>
+        <action
+            android:id="@+id/action_first_to_second"
+            app:destination="@id/gridViewSecond"
+            app:popUpTo="@+id/gridViewFirst"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_first_to_third"
+            app:destination="@id/gridViewThird"
+            app:popUpTo="@+id/gridViewFirst"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_first_to_fourth"
+            app:destination="@id/gridViewFourth"
+            app:popUpTo="@+id/gridViewFirst"
+            app:popUpToInclusive="true"></action>
     </fragment>
     <fragment
         android:id="@+id/gridViewSecond"

@@ -29,6 +29,7 @@ public class GridViewContent extends AppCompatActivity {
             Toast.makeText(this, (String)data,
                     Toast.LENGTH_LONG).show();
             navController.navigate(R.id.action_first_to_second);
+            overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
 //            navController.navigate(R.id.gridViewSecond);
         }
         else if (position ==2){
@@ -36,6 +37,7 @@ public class GridViewContent extends AppCompatActivity {
                     .setPopUpTo(R.id.gridViewThird, true)
                     .build();
             navController.navigate(R.id.action_first_to_third);
+            overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
 //            navController.navigate(R.id.gridViewThird);
         }
         else {
@@ -43,6 +45,7 @@ public class GridViewContent extends AppCompatActivity {
                     .setPopUpTo(R.id.gridViewThird, true)
                     .build();
             navController.navigate(R.id.action_first_to_fourth);
+            overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
 //            navController.navigate(R.id.gridViewFourth);
         }
     }
