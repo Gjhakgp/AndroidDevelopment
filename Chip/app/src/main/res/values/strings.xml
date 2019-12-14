@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Chip</string>
+    <string-array name="contact">
+        <item>Apoorva</item>
+        <item>Gaurav</item>
+        <item>Roshan</item>
+        <item>Rahul</item>
+        <item>Indra</item>
+    </string-array>
+</resources>
